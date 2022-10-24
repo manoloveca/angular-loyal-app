@@ -7,24 +7,28 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-agregarNombre() {
-  this.nombres.push(this.nombre);
-}
   title = 'app-loyal';
-  mostrarLogin:boolean=false;
-  applogin='applogin';
-  nombres = ['juan','antonio','pedro'];
-  nombre: string ='';
+  mostrarLogin:boolean = true;
+  applogin = 'applogin';
+  nombres = ['juan','carlos','pedro'];
+  nombre: string = '';
 
-  cambiarVisibilidad(){
-    console.log('cambiar');
-    this.mostrarLogin=!this.mostrarLogin;
+  agregarNombre() {
+    this.nombres.push(this.nombre);
   }
-  cambiarClase(){
 
-    this.applogin = 'Otra clase';
+  cambiarVisibilidad() {
+    console.log('cambiando visibilidad');
+    this.mostrarLogin = !this.mostrarLogin;
   }
-  alert(){
-    window.alert('doble click');
+
+  alert() {
+    window.alert();
+  }
+
+  cambiarClase() {
+    this.applogin = 'otraClase';
   }
 }
+
+
